@@ -3,15 +3,12 @@ x = input('Введите X: ')
 y = input('Введите Y: ')
 z = input('Введите Z: ')
 
-xyz = [x, y, z]
 
-print(xyz)
+first_statement = not (x or y or z)
+second_statement = not x and not y and not z
+result = first_statement == second_statement
 
-firstStatement = not (xyz[0] or xyz[1] or xyz[2])
-secondStatement = not xyz[0] and not xyz[1] and not xyz[2]
-result = firstStatement == secondStatement
-
-if result == True:
+if result:
     print('Утверждение верно!')
 else:
     print('Утверждение не верно!')
