@@ -13,9 +13,11 @@
 
 lst = list(map(int, input('Введите числа ')))
 print(f'Исходный список {lst}')
-new_lst = []
-for i in lst:
-    if i not in new_lst:
-        new_lst.append(i)
-new_lst.sort()
-print(f'Список из неповторяющихся элементов: {new_lst}')
+# new_lst = []
+# for i in lst:
+#     if i not in new_lst:
+#         new_lst.append(i)
+# new_lst.sort()
+# print(f'Список из неповторяющихся элементов: {new_lst}')
+lst = [el for el in lst if lst.count(el) == 1]
+print(f'Список из неповторяющихся элементов: {lst}')
