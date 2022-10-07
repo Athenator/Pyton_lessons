@@ -6,8 +6,9 @@
 
 # Через bin
 # num = int(input('Введите число: '))
-# num_d = bin(num)
-# print(num_d)
+# num_double = bin(num)
+# print(num_double[2:])
+
 
 # Через алгоритм
 

@@ -1,6 +1,18 @@
 # Задайте список из вещественных чисел. Напишите программу, которая найдёт разницу между максимальным и минимальным значением дробной части элементов.
 # Пример:
 # o [1.1, 1.2, 3.1, 5, 10.01] => 0.19
+from decimal import Decimal
+
+# a = [1.1, 1.2, 3.1, 5, 10.01]
+# b = []
+# for i in a:
+#     if i % 1 != 0:
+#         b.append(Decimal(str(i%1))) 
+# b.sort()
+
+# print(f'Разницп между значениями : {b[len(b)-1]-b[0]}')
+
+
 def make_list(array, count):
     array = []
     for i in range(count):
@@ -39,3 +51,9 @@ print(f'Минимальный элемент - > {fmin}\nМаксимальны
 diff = fmax - fmin
 
 print(flist, ' => ',round(diff, 10))
+# lst = [1.1, 1.2, 3.1, 5, 10.01]
+
+# lst = [round(val % 1, 2) for val in lst]
+# rev_result = max(lst) - min(lst)
+# print(max(lst), min(lst))
+# print(rev_result)
