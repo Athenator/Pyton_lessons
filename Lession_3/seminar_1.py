@@ -91,15 +91,14 @@
 
 # Напишите программу, удаляющую из текста все слова содержащие "абв".
 
-# my_text = 'Напишите абв напиабв програбвмму программу, удаляющую из этого абв текста все вабвс слова, содерабващие содержащие "абв"'
+my_text = 'Напишите абв напиабв програбвмму программу, удаляющую из этого абв текста все вабвс слова, содерабващие содержащие "абв"'
+print(f'Изначальный вид текста: {my_text}')
+def del_some_words(my_text):
+    my_text = list(filter(lambda x: 'абв' not in x, my_text.split()))
+    return " ".join(my_text)
 
-# def del_some_words(my_text):
-#     my_text = list(filter(lambda x: 'абв' not in x, my_text.split()))
-#     print(my_text)
-#     return " ".join(my_text)
-
-# my_text = del_some_words(my_text)
-# print(my_text)
+my_text = del_some_words(my_text)
+print(my_text)
 
 # text = str('абвольт (абв) — единица измерения электрического потенциала (напряжения),\
 # разности электрических потенциалов и электродвижущей силы (ЭДС) в СГСМ\
