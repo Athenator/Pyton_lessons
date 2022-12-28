@@ -1,2 +1,2 @@
-Курс по python от Geek brains
-![py](https://создание-сайта.net/images/newsnew/newsnew/python-logo.jpg)
+# Курс по python от Geek brains
+![py](https://logicoretech.com/wp-content/uploads/2022/05/Python-Symbol.png)
